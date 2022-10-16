@@ -5,7 +5,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        twitter: '#7834FF',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
